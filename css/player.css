@@ -1,0 +1,273 @@
+
+:root {
+    --text: #2a2728;
+    --bg: #f7f7f7;
+    --white: #fff;
+    --navbar: #090f1b;
+}
+
+#background {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+    	background-color: #000;
+    	background-size: cover;
+    	background-position: center;
+}
+
+#player {
+   	position: absolute;
+    	z-index: 0;
+    	top: 60px;
+    	left: calc(50vw - 250px);
+    	width: 100%;
+    	max-width: 500px;
+    	height: calc(100vh - 140px);
+    	overflow: hidden;
+	filter: none;
+}
+
+#title {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mainTitle {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--theme);
+    text-shadow: -0.5px 0, 0 0.5px, 0.5px 0, 0 -0.5px;
+    text-align: center;
+}
+
+#subTitle {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--white);
+}
+
+#chr{
+    	position: absolute;
+    	z-index: 2;
+}
+
+#chr1{
+   	position: absolute;
+    	width: 400px;
+    	top: calc(100vh - 800px);
+    	left: calc(50vw - 115px - 200px);
+}
+
+#chr0{
+   	position: absolute;
+    	width: 400px;
+    	top: calc(100vh - 800px);
+       	left: calc(50vw - 200px);
+}
+
+#chr2{
+    	position: absolute;
+    	width: 400px;
+    	top: calc(100vh - 800px);
+    	left: calc(50vw + 115px - 200px);
+}
+
+#lineBox{
+    position: absolute;
+    z-index: 3;
+    height: 300px;
+    top: calc(100vh - 380px);
+}
+
+.name{
+    position: absolute;
+    z-index: 5;
+    background-color: var(--theme);
+    color: var(--white);
+    height: 2.7rem;
+    line-height: 2.7rem;
+    width: 100vw;
+    max-width: 200px;
+    font-size: 1.4rem;
+    border-radius: 25px;
+    padding: 0 20px;
+    left: 50px;
+    overflow: hidden;
+}
+
+.place {
+    position: absolute;
+    z-index: 5;
+    background-color: var(--theme);
+    color: var(--white);
+    height: 2.7rem;
+    line-height: 2.7rem;
+    width: 100vw;
+    max-width: 200px;
+    font-size: 1.4rem;
+    border-radius: 25px;
+    padding: 0 20px;
+    top: calc(280px - 50vh);
+    left: 150px;
+    overflow: hidden;
+}
+
+#line{
+    position: absolute;
+    z-index: 4;
+    background-color: var(--bg);
+    color: var(--text);
+    height: 190px;
+    width: 450px;
+    top: 20px;
+    left: 25px;
+    border-radius: 100px;
+    padding: 50px 50px;
+    border: 4px solid var(--theme);
+}
+
+#line1{
+    font-size: 20px;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+#line2{
+    font-size: 20px;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+#line3{
+    font-size: 20px;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+#controller{
+    position: absolute;
+    z-index: 6;
+}
+
+#prev {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+    border-radius: 1.25rem;
+    color: var(--white);
+    background-color: var(--theme);
+    top: calc(100vh - 283px);
+    left: 10px;
+    cursor: pointer;
+}
+
+#next {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+    border-radius: 1.25rem;
+    color: var(--white);
+    background-color: var(--theme);
+    top: calc(100vh - 283px);
+    left: calc(500px - 10px - 2.5rem);
+    cursor: pointer;
+}
+
+#mute {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.25rem;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    border-radius: 1.25rem;
+    color: var(--white);
+    background-color: var(--theme);
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#raw {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.25rem;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    border-radius: 1.25rem;
+    color: var(--white);
+    background-color: var(--theme);
+    top: 10px;
+    left: calc(20px + 2.5rem);
+    cursor: pointer;
+}
+
+
+@media all and (max-width: 500px) {
+
+    #player{
+        margin-left: 0px;
+        left: 0;
+		height: calc(var(--vh) * 100 - 140px);
+    }
+
+    .place {
+        top: calc(280px - var(--vh) * 50);
+    }
+
+    #lineBox{
+        top: calc(var(--vh) * 100 - 380px);
+    }
+
+    #line{
+        width: 90vw;
+        left: 5vw;
+        padding: 50px 10vw;
+    }
+
+    #line1, #line2, #line3 {
+        font-size: 3.9vw;
+    }
+
+
+    #prev {
+        top: calc(var(--vh) * 100 - 283px);
+    }
+
+    #next {
+        top: calc(var(--vh) * 100 - 283px);
+        left: calc(100vw - 10px - 2.5rem);
+    }
+
+    #chr1 {
+        left: calc(26vw - 200px);
+    }
+
+    #chr0 {
+        left: calc(50vw - 200px);
+    }
+
+    #chr2 {
+        left: calc(74vw - 200px);
+    }
+
+    .place {
+        left: calc(50vw - 100px);
+    }
+}
