@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
 @font-face {
     font-family: 'Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
@@ -22,7 +24,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Regular', sans-serif;
+	font-family: 'Regular', 'M PLUS Rounded 1c', sans-serif;
 	text-decoration: none;
 	box-sizing: border-box;
         font-size: 16px;
