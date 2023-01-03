@@ -6,7 +6,7 @@
 ```
 {
   balloon: "default",
-  theme: "#7174F6",
+  theme: "#5bd485",
   bg: {
     강당: "lecture_room",
     기숙사: "dorm"
