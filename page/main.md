@@ -5,5 +5,4 @@
 
 ### ep01. 내가 인하지 못한 게 신경쓰이기 시작했다
 
-* 01.1 [샘플](./index.html?ep=sample)
-* 01.2 [테스트](./index.html?ep=test)
+* 01.1 [뜻을 두지 않는](./index.html?ep=main1-1)
